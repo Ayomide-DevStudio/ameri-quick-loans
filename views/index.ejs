@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AmeriQuickLoans - Home</title>
+  <link href="/css/output.css" rel="stylesheet">
+  <script src="/js/app.js" defer></script>
+</head>
+<body class="bg-gray-100">
+  <%- include('partials/header') %>
+  <main class="container mx-auto p-4">
+    <section class="text-center py-12 bg-white rounded-lg shadow-lg">
+      <h2 class="text-3xl font-bold mb-4">Fast Personal Loans for Americans</h2>
+      <p class="mb-6">Apply online in minutes. Rates from 5.99% APR. No hidden fees.</p>
+      <a href="/apply" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition">Apply Now</a>
+      <div class="mt-8 max-w-md mx-auto">
+        <h3 class="text-xl mb-4">Loan Calculator</h3>
+        <input id="amount" type="number" placeholder="Amount ($)" class="w-full mb-2 p-2 border rounded">
+        <input id="term" type="number" placeholder="Term (months)" class="w-full mb-2 p-2 border rounded">
+        <p id="result" class="mt-4 font-semibold"></p>
+      </div>
+    </section>
+  </main>
+  <%- include('partials/footer') %>
+</body>
+</html>
